@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>High-Execution VA | Storytelling Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700;800&family=Inter:wght@300;400;500;600&family=Montserrat:wght@700;800&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --mint: #00FF7F;
+        --orange: #FF4500;
+        --blue: #00FFFF;
+        --bg-cream: #FDFDF5;
+        --dark: #1A1A1A;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--bg-cream);
+        color: var(--dark);
+        overflow-x: hidden;
+      }
+      h1, h2, h3, h4 {
+        font-family: 'Lexend', 'Montserrat', sans-serif;
+      }
+      .accent-font {
+        font-family: 'Permanent Marker', cursive;
+      }
+      .glass {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border: 2px solid var(--dark);
+      }
+      .pop-border {
+        border: 3px solid var(--dark);
+      }
+      .hard-shadow-blue {
+        shadow-offset: 6px 6px;
+        box-shadow: 6px 6px 0px var(--blue);
+      }
+      .hard-shadow-orange {
+        box-shadow: 6px 6px 0px var(--orange);
+      }
+      .hard-shadow-mint {
+        box-shadow: 6px 6px 0px var(--mint);
+      }
+      .hard-shadow-dark {
+        box-shadow: 6px 6px 0px var(--dark);
+      }
+      .text-outline {
+        -webkit-text-stroke: 1px var(--dark);
+        color: transparent;
+      }
+      .halftone-bg {
+        background-image: radial-gradient(rgba(0,0,0,0.1) 1px, transparent 0.5px);
+        background-size: 15px 15px;
+      }
+      @keyframes marquee {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+      .animate-marquee {
+        display: flex;
+        width: 200%;
+        animation: marquee 30s linear infinite;
+      }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: var(--bg-cream);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: var(--dark);
+        border: 2px solid var(--bg-cream);
+        border-radius: 10px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "framer-motion": "https://esm.sh/framer-motion@^12.23.26"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
